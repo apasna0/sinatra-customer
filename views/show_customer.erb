@@ -1,0 +1,25 @@
+<table class="table table-responsive table-hover">
+  <thead>
+    <th>Parameter</th>
+    <th>Customer data</th>
+  </thead>
+  <tbody>
+    <tr >
+      <td>ID</td>
+      <td><%= @customer.id %></td>
+    </tr>
+    <tr>
+      <td>Full name</td>
+      <td><%= @customer.full_name %></td>
+    </tr>
+    <tr>
+      <td>Asmens kodas</td>
+      <td><%= @customer.code %></td>
+    </tr>
+    <tr>
+      <td>Amzius</td>
+      <td><%= @customer.age %></td>
+    </tr>
+  </tbody>
+</table>
+<a href="/customers/<%= @customer.id %>/edit" class="btn btn-default">Edit</a>
