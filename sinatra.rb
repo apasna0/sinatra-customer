@@ -15,7 +15,6 @@ class MyApp < Sinatra::Base
 		@customers = Customer.all(@per_page, @page)
 		@customers_count = Customer.count / @per_page
 		@last_page = @customers_count / @per_page
-		#binding.pry
 		erb :main
 	end
 
